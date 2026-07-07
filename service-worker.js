@@ -37,7 +37,11 @@ const STATIC_FILES = [
     './lib/qrcode.min.js',
     './media/logo.png',
     './media/bayan_logo.png',
-    './media/logo.ico'
+    './media/logo.ico',
+    './media/wp_gold.png',
+    './media/wp_emerald.png',
+    './media/wp_blue.png',
+    './media/wp_tech.png'
 ];
 
 // تثبيت السيرفس ووركر وتخزين الملفات الأساسية

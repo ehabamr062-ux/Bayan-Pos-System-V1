@@ -511,6 +511,7 @@
         #price-tracking-section::-webkit-scrollbar {
             width: 10px;
         }
+
         #accounts-section .table-container::-webkit-scrollbar-track,
         #pt-content-area::-webkit-scrollbar-track,
         #price-tracking-section::-webkit-scrollbar-track {
@@ -518,6 +519,7 @@
             border-radius: 10px;
             margin: 4px 0;
         }
+
         #accounts-section .table-container::-webkit-scrollbar-thumb,
         #pt-content-area::-webkit-scrollbar-thumb,
         #price-tracking-section::-webkit-scrollbar-thumb {
@@ -525,11 +527,13 @@
             border-radius: 10px;
             border: 2px solid #fef3c7;
         }
+
         #accounts-section .table-container::-webkit-scrollbar-thumb:hover,
         #pt-content-area::-webkit-scrollbar-thumb:hover,
         #price-tracking-section::-webkit-scrollbar-thumb:hover {
             background: linear-gradient(180deg, #fbbf24, #b45309);
         }
+
         #accounts-section .table-container,
         #pt-content-area,
         #price-tracking-section {
@@ -699,7 +703,8 @@
                     <!-- كارت البراند المدمج الفخم المطور -->
                     <div class="dm-mid-tile"
                         style="background: #020617; border: 2px solid #d4af37; flex: 1.5; height: 110px; cursor: default; transform: none !important; position: relative; overflow: hidden; box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(212, 175, 55, 0.25); border-radius: 16px; padding: 0; display: flex; align-items: center; justify-content: center;">
-                        <img src="media/bayan_logo.png" style="width: 100%; height: 100%; object-fit: cover; display: block;" alt="Bayan POS Logo">
+                        <img src="media/bayan_logo.png"
+                            style="width: 100%; height: 100%; object-fit: cover; display: block;" alt="Bayan POS Logo">
                     </div>
 
                     <div class="dm-mid-tile" onclick="switchSection('analysis')" data-perm="general_profits">
@@ -1273,45 +1278,65 @@
                 <!-- ملخص الفاتورة المدمج (مرتجع مبيعات) -->
                 <div class="invoice-summary-compact"
                     style="margin-top: auto; border-top: 1px solid rgba(226, 232, 240, 0.6); padding: 8px 12px; background: linear-gradient(to right, #f8fafc, #f1f5f9); box-shadow: 0 -2px 10px rgba(0,0,0,0.02);">
-                    
-                    <div style="display: flex; gap: 8px; align-items: center; justify-content: space-between; flex-wrap: wrap;">
-                        
+
+                    <div
+                        style="display: flex; gap: 8px; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+
                         <!-- Stats -->
                         <div style="display: flex; gap: 8px; flex: 1; min-width: 250px;">
-                            <div style="background: white; padding: 4px 8px; border-radius: 8px; border: 1px solid #e2e8f0; display: flex; align-items: center; gap: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
+                            <div
+                                style="background: white; padding: 4px 8px; border-radius: 8px; border: 1px solid #e2e8f0; display: flex; align-items: center; gap: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
                                 <span style="font-size: 0.75rem; color: #64748b; font-weight: 800;">📦</span>
-                                <span id="returnItemsCount" style="font-size: 1rem; font-weight: 900; color: #f97316;">0</span>
+                                <span id="returnItemsCount"
+                                    style="font-size: 1rem; font-weight: 900; color: #f97316;">0</span>
                             </div>
-                            <div style="background: white; padding: 4px 8px; border-radius: 8px; border: 1px solid #e2e8f0; display: flex; align-items: center; gap: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
+                            <div
+                                style="background: white; padding: 4px 8px; border-radius: 8px; border: 1px solid #e2e8f0; display: flex; align-items: center; gap: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
                                 <span style="font-size: 0.75rem; color: #64748b; font-weight: 800;">🔢</span>
-                                <span id="returnTotalQty" style="font-size: 1rem; font-weight: 900; color: #f97316;">0</span>
+                                <span id="returnTotalQty"
+                                    style="font-size: 1rem; font-weight: 900; color: #f97316;">0</span>
                             </div>
-                            <div style="background: white; padding: 4px 12px; border-radius: 8px; border: 1px solid #cbd5e1; display: flex; align-items: center; gap: 8px; box-shadow: inset 0 1px 2px rgba(255,255,255,0.5);">
+                            <div
+                                style="background: white; padding: 4px 12px; border-radius: 8px; border: 1px solid #cbd5e1; display: flex; align-items: center; gap: 8px; box-shadow: inset 0 1px 2px rgba(255,255,255,0.5);">
                                 <span style="font-size: 0.75rem; color: #475569; font-weight: 800;">💰</span>
-                                <span id="salesReturnSubTotal" style="font-size: 1.1rem; font-weight: 900; color: #0f172a;">0.00</span>
+                                <span id="salesReturnSubTotal"
+                                    style="font-size: 1.1rem; font-weight: 900; color: #0f172a;">0.00</span>
                             </div>
                         </div>
 
                         <!-- Inputs -->
                         <div style="display: flex; gap: 6px; align-items: center;">
                             <!-- Discount -->
-                            <div style="display: flex; align-items: center; background: white; height: 32px; border-radius: 6px; border: 1px solid #fca5a5; overflow: hidden;">
-                                <span style="padding: 0 6px; background: #fef2f2; color: #ef4444; font-size: 0.7rem; font-weight: 900; border-left: 1px solid #fca5a5;">✂️</span>
-                                <input type="number" id="salesReturnDiscount" value="0" style="width: 50px; border: none; padding: 0 4px; font-size: 0.85rem; font-weight: bold; color: #b91c1c; text-align: center; outline: none; background: white;" oninput="updateReturnTotal()">
-                                <select id="salesReturnDiscountType" onchange="updateReturnTotal()" style="width: 40px; border: none; background: #fef2f2; border-right: 1px solid #fca5a5; font-size: 0.75rem; font-weight: bold; color: #991b1b; outline: none; cursor: pointer; text-align: center; appearance: none; padding: 0;">
+                            <div
+                                style="display: flex; align-items: center; background: white; height: 32px; border-radius: 6px; border: 1px solid #fca5a5; overflow: hidden;">
+                                <span
+                                    style="padding: 0 6px; background: #fef2f2; color: #ef4444; font-size: 0.7rem; font-weight: 900; border-left: 1px solid #fca5a5;">✂️</span>
+                                <input type="number" id="salesReturnDiscount" value="0"
+                                    style="width: 50px; border: none; padding: 0 4px; font-size: 0.85rem; font-weight: bold; color: #b91c1c; text-align: center; outline: none; background: white;"
+                                    oninput="updateReturnTotal()">
+                                <select id="salesReturnDiscountType" onchange="updateReturnTotal()"
+                                    style="width: 40px; border: none; background: #fef2f2; border-right: 1px solid #fca5a5; font-size: 0.75rem; font-weight: bold; color: #991b1b; outline: none; cursor: pointer; text-align: center; appearance: none; padding: 0;">
                                     <option value="val">ج.م</option>
                                     <option value="perc">%</option>
                                 </select>
                             </div>
 
                             <!-- Faka Button -->
-                            <button onclick="applyFractionalDiscount('salesReturn')" style="height: 32px; width: 32px; border-radius: 6px; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); border: none; color: white; cursor: pointer; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(234, 88, 12, 0.2); transition: transform 0.2s; border-bottom: 2px solid #c2410c;" title="خصم فكة" onmouseover="this.style.transform='translateY(-1px)'" onmouseout="this.style.transform='translateY(0)'">✂️</button>
+                            <button onclick="applyFractionalDiscount('salesReturn')"
+                                style="height: 32px; width: 32px; border-radius: 6px; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); border: none; color: white; cursor: pointer; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(234, 88, 12, 0.2); transition: transform 0.2s; border-bottom: 2px solid #c2410c;"
+                                title="خصم فكة" onmouseover="this.style.transform='translateY(-1px)'"
+                                onmouseout="this.style.transform='translateY(0)'">✂️</button>
 
                             <!-- Tax -->
-                            <div style="display: flex; align-items: center; background: white; height: 32px; border-radius: 6px; border: 1px solid #93c5fd; overflow: hidden;">
-                                <span style="padding: 0 6px; background: #eff6ff; color: #3b82f6; font-size: 0.7rem; font-weight: 900; border-left: 1px solid #93c5fd;">➕</span>
-                                <input type="number" id="salesReturnTax" value="0" style="width: 50px; border: none; padding: 0 4px; font-size: 0.85rem; font-weight: bold; color: #1d4ed8; text-align: center; outline: none; background: white;" oninput="updateReturnTotal()">
-                                <select id="salesReturnTaxType" onchange="updateReturnTotal()" style="width: 40px; border: none; background: #eff6ff; border-right: 1px solid #93c5fd; font-size: 0.75rem; font-weight: bold; color: #1e40af; outline: none; cursor: pointer; text-align: center; appearance: none; padding: 0;">
+                            <div
+                                style="display: flex; align-items: center; background: white; height: 32px; border-radius: 6px; border: 1px solid #93c5fd; overflow: hidden;">
+                                <span
+                                    style="padding: 0 6px; background: #eff6ff; color: #3b82f6; font-size: 0.7rem; font-weight: 900; border-left: 1px solid #93c5fd;">➕</span>
+                                <input type="number" id="salesReturnTax" value="0"
+                                    style="width: 50px; border: none; padding: 0 4px; font-size: 0.85rem; font-weight: bold; color: #1d4ed8; text-align: center; outline: none; background: white;"
+                                    oninput="updateReturnTotal()">
+                                <select id="salesReturnTaxType" onchange="updateReturnTotal()"
+                                    style="width: 40px; border: none; background: #eff6ff; border-right: 1px solid #93c5fd; font-size: 0.75rem; font-weight: bold; color: #1e40af; outline: none; cursor: pointer; text-align: center; appearance: none; padding: 0;">
                                     <option value="val">ج.م</option>
                                     <option value="perc">%</option>
                                 </select>
@@ -1547,45 +1572,65 @@
                 <!-- ملخص الفاتورة المدمج (مرتجع مشتريات) -->
                 <div class="invoice-summary-compact"
                     style="margin-top: auto; border-top: 1px solid rgba(226, 232, 240, 0.6); padding: 8px 12px; background: linear-gradient(to right, #f8fafc, #f1f5f9); box-shadow: 0 -2px 10px rgba(0,0,0,0.02);">
-                    
-                    <div style="display: flex; gap: 8px; align-items: center; justify-content: space-between; flex-wrap: wrap;">
-                        
+
+                    <div
+                        style="display: flex; gap: 8px; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+
                         <!-- Stats -->
                         <div style="display: flex; gap: 8px; flex: 1; min-width: 250px;">
-                            <div style="background: white; padding: 4px 8px; border-radius: 8px; border: 1px solid #e2e8f0; display: flex; align-items: center; gap: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
+                            <div
+                                style="background: white; padding: 4px 8px; border-radius: 8px; border: 1px solid #e2e8f0; display: flex; align-items: center; gap: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
                                 <span style="font-size: 0.75rem; color: #64748b; font-weight: 800;">📦</span>
-                                <span id="purReturnItemsCount" style="font-size: 1rem; font-weight: 900; color: #e11d48;">0</span>
+                                <span id="purReturnItemsCount"
+                                    style="font-size: 1rem; font-weight: 900; color: #e11d48;">0</span>
                             </div>
-                            <div style="background: white; padding: 4px 8px; border-radius: 8px; border: 1px solid #e2e8f0; display: flex; align-items: center; gap: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
+                            <div
+                                style="background: white; padding: 4px 8px; border-radius: 8px; border: 1px solid #e2e8f0; display: flex; align-items: center; gap: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
                                 <span style="font-size: 0.75rem; color: #64748b; font-weight: 800;">🔢</span>
-                                <span id="purReturnTotalQty" style="font-size: 1rem; font-weight: 900; color: #e11d48;">0</span>
+                                <span id="purReturnTotalQty"
+                                    style="font-size: 1rem; font-weight: 900; color: #e11d48;">0</span>
                             </div>
-                            <div style="background: white; padding: 4px 12px; border-radius: 8px; border: 1px solid #cbd5e1; display: flex; align-items: center; gap: 8px; box-shadow: inset 0 1px 2px rgba(255,255,255,0.5);">
+                            <div
+                                style="background: white; padding: 4px 12px; border-radius: 8px; border: 1px solid #cbd5e1; display: flex; align-items: center; gap: 8px; box-shadow: inset 0 1px 2px rgba(255,255,255,0.5);">
                                 <span style="font-size: 0.75rem; color: #475569; font-weight: 800;">💰</span>
-                                <span id="purReturnSubTotal" style="font-size: 1.1rem; font-weight: 900; color: #0f172a;">0.00</span>
+                                <span id="purReturnSubTotal"
+                                    style="font-size: 1.1rem; font-weight: 900; color: #0f172a;">0.00</span>
                             </div>
                         </div>
 
                         <!-- Inputs -->
                         <div style="display: flex; gap: 6px; align-items: center;">
                             <!-- Discount -->
-                            <div style="display: flex; align-items: center; background: white; height: 32px; border-radius: 6px; border: 1px solid #fca5a5; overflow: hidden;">
-                                <span style="padding: 0 6px; background: #fef2f2; color: #ef4444; font-size: 0.7rem; font-weight: 900; border-left: 1px solid #fca5a5;">✂️</span>
-                                <input type="number" id="purReturnDiscount" value="0" style="width: 50px; border: none; padding: 0 4px; font-size: 0.85rem; font-weight: bold; color: #b91c1c; text-align: center; outline: none; background: white;" oninput="updateReturnTotal('purchase')">
-                                <select id="purReturnDiscountType" onchange="updateReturnTotal('purchase')" style="width: 40px; border: none; background: #fef2f2; border-right: 1px solid #fca5a5; font-size: 0.75rem; font-weight: bold; color: #991b1b; outline: none; cursor: pointer; text-align: center; appearance: none; padding: 0;">
+                            <div
+                                style="display: flex; align-items: center; background: white; height: 32px; border-radius: 6px; border: 1px solid #fca5a5; overflow: hidden;">
+                                <span
+                                    style="padding: 0 6px; background: #fef2f2; color: #ef4444; font-size: 0.7rem; font-weight: 900; border-left: 1px solid #fca5a5;">✂️</span>
+                                <input type="number" id="purReturnDiscount" value="0"
+                                    style="width: 50px; border: none; padding: 0 4px; font-size: 0.85rem; font-weight: bold; color: #b91c1c; text-align: center; outline: none; background: white;"
+                                    oninput="updateReturnTotal('purchase')">
+                                <select id="purReturnDiscountType" onchange="updateReturnTotal('purchase')"
+                                    style="width: 40px; border: none; background: #fef2f2; border-right: 1px solid #fca5a5; font-size: 0.75rem; font-weight: bold; color: #991b1b; outline: none; cursor: pointer; text-align: center; appearance: none; padding: 0;">
                                     <option value="val">ج.م</option>
                                     <option value="perc">%</option>
                                 </select>
                             </div>
 
                             <!-- Faka Button -->
-                            <button onclick="applyFractionalDiscount('purchaseReturn')" style="height: 32px; width: 32px; border-radius: 6px; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); border: none; color: white; cursor: pointer; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(234, 88, 12, 0.2); transition: transform 0.2s; border-bottom: 2px solid #c2410c;" title="خصم فكة" onmouseover="this.style.transform='translateY(-1px)'" onmouseout="this.style.transform='translateY(0)'">✂️</button>
+                            <button onclick="applyFractionalDiscount('purchaseReturn')"
+                                style="height: 32px; width: 32px; border-radius: 6px; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); border: none; color: white; cursor: pointer; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(234, 88, 12, 0.2); transition: transform 0.2s; border-bottom: 2px solid #c2410c;"
+                                title="خصم فكة" onmouseover="this.style.transform='translateY(-1px)'"
+                                onmouseout="this.style.transform='translateY(0)'">✂️</button>
 
                             <!-- Tax -->
-                            <div style="display: flex; align-items: center; background: white; height: 32px; border-radius: 6px; border: 1px solid #93c5fd; overflow: hidden;">
-                                <span style="padding: 0 6px; background: #eff6ff; color: #3b82f6; font-size: 0.7rem; font-weight: 900; border-left: 1px solid #93c5fd;">➕</span>
-                                <input type="number" id="purReturnTax" value="0" style="width: 50px; border: none; padding: 0 4px; font-size: 0.85rem; font-weight: bold; color: #1d4ed8; text-align: center; outline: none; background: white;" oninput="updateReturnTotal('purchase')">
-                                <select id="purReturnTaxType" onchange="updateReturnTotal('purchase')" style="width: 40px; border: none; background: #eff6ff; border-right: 1px solid #93c5fd; font-size: 0.75rem; font-weight: bold; color: #1e40af; outline: none; cursor: pointer; text-align: center; appearance: none; padding: 0;">
+                            <div
+                                style="display: flex; align-items: center; background: white; height: 32px; border-radius: 6px; border: 1px solid #93c5fd; overflow: hidden;">
+                                <span
+                                    style="padding: 0 6px; background: #eff6ff; color: #3b82f6; font-size: 0.7rem; font-weight: 900; border-left: 1px solid #93c5fd;">➕</span>
+                                <input type="number" id="purReturnTax" value="0"
+                                    style="width: 50px; border: none; padding: 0 4px; font-size: 0.85rem; font-weight: bold; color: #1d4ed8; text-align: center; outline: none; background: white;"
+                                    oninput="updateReturnTotal('purchase')">
+                                <select id="purReturnTaxType" onchange="updateReturnTotal('purchase')"
+                                    style="width: 40px; border: none; background: #eff6ff; border-right: 1px solid #93c5fd; font-size: 0.75rem; font-weight: bold; color: #1e40af; outline: none; cursor: pointer; text-align: center; appearance: none; padding: 0;">
                                     <option value="val">ج.م</option>
                                     <option value="perc">%</option>
                                 </select>
@@ -2603,8 +2648,8 @@
                     style="display: flex; align-items: center; gap: 8px; flex: 1; flex-wrap: wrap; background: rgba(0,0,0,0.03); padding: 4px 10px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.05);">
                     <select id="anPeriodFilter" onchange="applyAnalysisPeriodFilter(this.value)" class="search-input"
                         style="width:90px; padding:2px 5px; height: 30px; font-size: 0.8rem;">
+                        <option value="today" selected>اليوم</option>
                         <option value="custom">مخصص</option>
-                        <option value="today">اليوم</option>
                         <option value="yesterday">الأمس</option>
                         <option value="thisweek">هذا الأسبوع</option>
                         <option value="thismonth">هذا الشهر</option>
@@ -2653,17 +2698,21 @@
 
             <!-- 2. شريط الأزرار التفاعلية (Actions) -->
             <div class="adj-top-bar"
-                style="background: linear-gradient(135deg, #fef9e7, #fef3cd); border-color: #f1c40f; padding: 10px; flex-shrink: 0;">
+                style="background: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 12px 15px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.02); border-radius: 12px; margin: 10px 10px 0 10px;">
                 <div style="display:flex; gap:10px; width:100%; align-items: center; flex-wrap: wrap;">
-                    <button class="v-btn" style="padding: 0 10px; height: 35px;" onclick="setAnalysisMode('summary')">📊
-                        تجميعي</button>
-                    <button class="v-btn" style="padding: 0 10px; height: 35px;"
-                        onclick="setAnalysisMode('detailed')">📑 تفصيلي</button>
-                    <button class="v-btn" style="padding: 0 10px; height: 35px; background:var(--box-red); color:white;"
-                        onclick="renderMostReturningCustomers()">🔄 المرتجعة</button>
+                    <button class="an-btn-summary" style="padding: 0 16px; height: 36px; background: linear-gradient(135deg, #6366f1, #4f46e5) !important; color: white !important; border: none !important; border-radius: 8px !important; font-weight: bold !important; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 4px rgba(79, 70, 229, 0.15); font-size: 0.85rem;" onclick="setAnalysisMode('summary')">
+                        <span>📊</span> تجميعي
+                    </button>
+                    <button class="an-btn-detailed" style="padding: 0 16px; height: 36px; background: linear-gradient(135deg, #10b981, #059669) !important; color: white !important; border: none !important; border-radius: 8px !important; font-weight: bold !important; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 4px rgba(16, 185, 129, 0.15); font-size: 0.85rem;" onclick="setAnalysisMode('detailed')">
+                        <span>📑</span> تفصيلي
+                    </button>
+                    <button class="an-btn-return" style="padding: 0 16px; height: 36px; background: linear-gradient(135deg, #ec4899, #db2777) !important; color: white !important; border: none !important; border-radius: 8px !important; font-weight: bold !important; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 4px rgba(236, 72, 153, 0.15); font-size: 0.85rem;" onclick="renderMostReturningCustomers()">
+                        <span>🔄</span> المرتجعة
+                    </button>
                     <div style="position:relative; display:inline-block;">
-                        <button class="v-btn" style="padding: 0 10px; height: 35px; background:#555; color:white;"
-                            onclick="toggleShareMenu('analysisShareMenu', event)">📤 مشاركة</button>
+                        <button class="an-btn-share" style="padding: 0 16px; height: 36px; background: linear-gradient(135deg, #64748b, #475569) !important; color: white !important; border: none !important; border-radius: 8px !important; font-weight: bold !important; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 4px rgba(100, 116, 139, 0.15); font-size: 0.85rem;" onclick="toggleShareMenu('analysisShareMenu', event)">
+                            <span>📤</span> مشاركة
+                        </button>
                         <div id="analysisShareMenu" class="share-menu centered-modal"
                             style="position: fixed !important; top: 10% !important; left: 50% !important; transform: translate(-50%, 0) !important; z-index: 999999 !important; background: white; border-radius: 15px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); width: 300px; padding: 15px;">
                             <button class="close-modal-btn"
@@ -2675,8 +2724,11 @@
                             <div class="share-item" onclick="printAnalysisReport()">🖨️ طباعة</div>
                         </div>
                     </div>
+                    <button class="an-btn-detailed" style="padding: 0 16px; height: 36px; background: linear-gradient(135deg, #f59e0b, #d97706) !important; color: white !important; border: none !important; border-radius: 8px !important; font-weight: bold !important; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 4px rgba(245, 158, 11, 0.15); font-size: 0.85rem;" onclick="viewSelectedAnalysisInvoice()">
+                        <span>📄</span> عرض الفاتورة
+                    </button>
                     <div
-                        style="margin-right:auto; font-weight:bold; background: var(--main-purple); padding: 5px 15px; border-radius: 10px; color:#ffffff; display:flex; gap:15px; flex-wrap: wrap; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
+                        style="margin-right:auto; font-weight:bold; background: linear-gradient(135deg, #8b5cf6, #7c3aed); padding: 6px 18px; border-radius: 10px; color:#ffffff; display:flex; gap:15px; flex-wrap: wrap; box-shadow: 0 4px 10px rgba(124, 58, 237, 0.2);">
                         <span>إجمالي المبيعات: <span id="anTotalSales" style="color:#ffffff;">0.00</span></span>
                         <span>القيمة التحليلية: <span id="anTotalProfit"
                                 style="color:#ffffff; font-size:1.1rem;">0.00</span></span>
@@ -2730,7 +2782,9 @@
                         <tr>
                             <th>تحديد</th>
                             <th>#</th>
-                            <th>التاريخ</th>
+                            <th style="cursor:pointer;" onclick="toggleAnalysisDateSort()">التاريخ<span id="anSortDateIcon"> 🔽</span></th>
+                            <th>الوقت</th>
+                            <th>نوع العملية</th>
                             <th>العميل</th>
                             <th>الصنف</th>
                             <th data-i18n="qty" data-i18n="qty">الكمية</th>
@@ -2897,7 +2951,8 @@
     <!-- ================= قسم حركة الصنف (Item History) ================= -->
     <div id="history-section" class="section-view history-theme hidden"
         style="height: calc(100vh - 105px); display: flex; flex-direction: column; align-items: stretch !important; overflow: hidden !important;">
-        <div class="products-panel" style="flex: 1; min-height: 0; display: flex; flex-direction: column; overflow: hidden !important; border-top: 4px solid var(--main-purple);">
+        <div class="products-panel"
+            style="flex: 1; min-height: 0; display: flex; flex-direction: column; overflow: hidden !important; border-top: 4px solid var(--main-purple);">
             <div class="panel-header"
                 style="justify-content: space-between; align-items: center; background: #fff; padding: 5px 15px; border-radius: 12px; margin-bottom: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); gap: 10px; flex-wrap: wrap;">
 
@@ -2937,7 +2992,8 @@
                                 placeholder="🔍 ابحث عن اسم الصنف هنا..." oninput="handleHistorySearch(this.value)"
                                 autocomplete="off">
                             <span class="luxury-search-icon">📦</span>
-                            <span class="luxury-search-clear" onclick="document.getElementById('historySearch').value=''; handleHistorySearch('');"
+                            <span class="luxury-search-clear"
+                                onclick="document.getElementById('historySearch').value=''; handleHistorySearch('');"
                                 title="مسح البحث">✕</span>
                         </div>
                         <div id="historySearchResults" class="search-results luxury-results">
@@ -3002,12 +3058,12 @@
                 <!-- فلتر بحث برقم الفاتورة أو العميل/المورد -->
                 <div style="display: flex; align-items: center; gap: 5px; flex: 1; min-width: 220px;">
                     <label>🔎 فاتورة/حساب:</label>
-                    <input type="text" id="historyInvoiceClientFilter"
-                        placeholder="رقم فاتورة أو اسم عميل/مورد..."
+                    <input type="text" id="historyInvoiceClientFilter" placeholder="رقم فاتورة أو اسم عميل/مورد..."
                         oninput="applyHistoryInvoiceClientFilter(this.value)"
                         style="flex:1; height:34px; border-radius:8px; border:2px solid #c084fc; padding:0 10px; font-size:0.88rem; outline:none; font-family:'Cairo',sans-serif;"
                         onfocus="this.style.borderColor='#7c3aed'" onblur="this.style.borderColor='#c084fc'">
-                    <button onclick="document.getElementById('historyInvoiceClientFilter').value=''; applyHistoryInvoiceClientFilter('');"
+                    <button
+                        onclick="document.getElementById('historyInvoiceClientFilter').value=''; applyHistoryInvoiceClientFilter('');"
                         style="background:#fee2e2;border:none;color:#ef4444;padding:0 8px;border-radius:8px;cursor:pointer;height:34px;font-size:1rem;">✕</button>
                 </div>
 
@@ -3119,9 +3175,11 @@
                     التغيرات ✅</button>
             </div>
 
-            <div class="table-container" style="margin-top: 15px; flex: 1 !important; min-height: 0 !important; overflow-y: auto !important;">
+            <div class="table-container"
+                style="margin-top: 15px; flex: 1 !important; min-height: 0 !important; overflow-y: auto !important;">
                 <table class="invoice-table">
-                    <thead style="background-color: var(--main-purple); color: white; position: sticky; top: 0; z-index: 10;">
+                    <thead
+                        style="background-color: var(--main-purple); color: white; position: sticky; top: 0; z-index: 10;">
                         <tr>
                             <th class="col-hist-0">تحديد</th>
                             <th class="col-hist-1">رقم الفاتورة</th>
@@ -3134,7 +3192,9 @@
                             <th class="col-hist-8">الطرف الثاني</th>
                             <th class="col-hist-9">تاريخ/وقت التعديل</th>
                             <th class="col-hist-10">المستخدم</th>
-                            <th class="col-hist-11" style="background: linear-gradient(135deg,#7c3aed,#f59e0b); white-space:nowrap;">📦 الكمية بعد العملية</th>
+                            <th class="col-hist-11"
+                                style="background: linear-gradient(135deg,#7c3aed,#f59e0b); white-space:nowrap;">📦
+                                الكمية بعد العملية</th>
                         </tr>
                     </thead>
                     <tbody id="historyTableBody">
@@ -3148,7 +3208,8 @@
     <!-- ================= قسم الفواتير الشامل (Invoices - New Section) ================= -->
     <div id="invoices-section" class="section-view invoices-theme hidden"
         style="height: calc(100vh - 105px); display: flex; flex-direction: column; align-items: stretch !important; overflow: hidden !important;">
-        <div class="products-panel" style="flex: 1; min-height: 0; display: flex; flex-direction: column; overflow: hidden !important; border-top: 4px solid var(--main-purple);">
+        <div class="products-panel"
+            style="flex: 1; min-height: 0; display: flex; flex-direction: column; overflow: hidden !important; border-top: 4px solid var(--main-purple);">
             <div class="panel-header"
                 style="display: flex; justify-content: space-between; align-items: center; background: #fff; padding: 10px 15px; border-radius: 12px; margin-bottom: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); flex-wrap: wrap; gap: 10px;">
 
@@ -3347,9 +3408,11 @@
                 </div>
             </div>
 
-            <div id="invoicesTableContainer" class="table-container" style="flex: 1 !important; min-height: 0 !important; overflow: auto !important;">
+            <div id="invoicesTableContainer" class="table-container"
+                style="flex: 1 !important; min-height: 0 !important; overflow: auto !important;">
                 <table id="invoicesMainTable" class="invoice-table">
-                    <thead id="invoicesTableHead" style="position: sticky; top: 0; z-index: 10; background-color: #2c3e50; color: white;">
+                    <thead id="invoicesTableHead"
+                        style="position: sticky; top: 0; z-index: 10; background-color: #2c3e50; color: white;">
                         <tr>
                             <th class="col-inv-0" style="width: 40px;">اختيار</th>
                             <th class="col-inv-1" style="min-width: 90px;">رقم الفاتورة</th>
@@ -3572,16 +3635,24 @@
                 <style>
                     .inventory-scroll-wrapper {
                         width: 100% !important;
-                        max-width: 100% !important; /* منع الجدول من التمدد خارج حدود الشاشة */
-                        min-width: 0 !important; /* كسر السلوك الافتراضي لـ flex */
-                        flex: 1 !important; /* ملء المساحة المتبقية تلقائياً */
-                        min-height: 0 !important; /* السماح بالتقلص داخل الحاوية المرنة */
-                        overflow-x: scroll !important; /* تفعيل التمرير الأفقي داخلياً */
+                        max-width: 100% !important;
+                        /* منع الجدول من التمدد خارج حدود الشاشة */
+                        min-width: 0 !important;
+                        /* كسر السلوك الافتراضي لـ flex */
+                        flex: 1 !important;
+                        /* ملء المساحة المتبقية تلقائياً */
+                        min-height: 0 !important;
+                        /* السماح بالتقلص داخل الحاوية المرنة */
+                        overflow-x: scroll !important;
+                        /* تفعيل التمرير الأفقي داخلياً */
                         overflow-y: auto !important;
-                        scroll-behavior: auto !important; /* إيقاف التمرير الناعم لمنع بطء المزامنة */
+                        scroll-behavior: auto !important;
+                        /* إيقاف التمرير الناعم لمنع بطء المزامنة */
                         padding-bottom: 8px;
-                        scrollbar-width: none !important; /* إخفاء شريط التمرير في فايرفوكس */
-                        -ms-overflow-style: none !important; /* إخفاء شريط التمرير في إيدج */
+                        scrollbar-width: none !important;
+                        /* إخفاء شريط التمرير في فايرفوكس */
+                        -ms-overflow-style: none !important;
+                        /* إخفاء شريط التمرير في إيدج */
                     }
 
                     /* إخفاء شريط التمرير السفلي تماماً في متصفحات كروم وإلكترون */
@@ -3593,7 +3664,8 @@
                     #invTopScrollbarContainer::-webkit-scrollbar {
                         height: 20px !important;
                         width: 20px !important;
-                        display: block !important; /* ضمان عدم إخفائه */
+                        display: block !important;
+                        /* ضمان عدم إخفائه */
                     }
 
                     #invTopScrollbarContainer::-webkit-scrollbar-track {
@@ -3614,10 +3686,12 @@
                 </style>
 
                 <!-- شريط التمرير العلوي المتزامن الفخم (بعرض كامل فوق الجدول) -->
-                <div id="invTopScrollbarContainer" style="width: 100%; overflow-x: auto; overflow-y: hidden; height: 22px; border-radius: 12px 12px 0 0; background: #f1f5f9; border: 1px solid #cbd5e1; border-bottom: none; display: block; flex-shrink: 0;">
+                <div id="invTopScrollbarContainer"
+                    style="width: 100%; overflow-x: auto; overflow-y: hidden; height: 22px; border-radius: 12px 12px 0 0; background: #f1f5f9; border: 1px solid #cbd5e1; border-bottom: none; display: block; flex-shrink: 0;">
                     <div id="invTopScrollbarFiller" style="height: 1px; width: 1800px;"></div>
                 </div>
-                <div class="table-container inventory-scroll-wrapper" style="border-radius: 0 0 12px 12px; border: 1px solid #cbd5e1; border-top: none;">
+                <div class="table-container inventory-scroll-wrapper"
+                    style="border-radius: 0 0 12px 12px; border: 1px solid #cbd5e1; border-top: none;">
                     <table class="invoice-table" style="min-width: 1800px !important; width: max-content !important;">
                         <thead>
                             <tr>
@@ -3748,19 +3822,19 @@
             <!-- شريط الأدوات الجانبي (Vertical Sidebar) -->
             <div class="accounts-sidebar"
                 style="width: 70px; flex-shrink: 0; display: flex; flex-direction: column; gap: 10px; border-top-color: #f1c40f !important; height: 100%; align-items: center; padding: 10px 0;">
-                
+
                 <button class="acc-action-btn" onclick="saveAdjustment()" title="حفظ (F9)"
                     style="width: 50px; height: 50px; border-radius: 14px; background: linear-gradient(135deg, #10b981, #059669); color: white; border: none; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0; box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3); transition: 0.2s;">
                     <span style="font-size: 1.3rem;">💾</span>
                     <span style="font-size: 0.6rem; font-weight: bold; margin-top: 2px;">F9</span>
                 </button>
-                
+
                 <button class="acc-action-btn" onclick="resetAdjustment()" title="جديد (F10)"
                     style="width: 50px; height: 50px; border-radius: 14px; background: linear-gradient(135deg, #3b82f6, #2563eb); color: white; border: none; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0; box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3); transition: 0.2s;">
                     <span style="font-size: 1.3rem;">🔄</span>
                     <span style="font-size: 0.6rem; font-weight: bold; margin-top: 2px;">F10</span>
                 </button>
-                
+
                 <button class="acc-action-btn" onclick="printAdjustmentData()" title="طباعة (F4)"
                     style="width: 50px; height: 50px; border-radius: 14px; background: linear-gradient(135deg, #8b5cf6, #6d28d9); color: white; border: none; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0; box-shadow: 0 4px 10px rgba(139, 92, 246, 0.3); transition: 0.2s;">
                     <span style="font-size: 1.3rem;">🖨️</span>
@@ -3781,8 +3855,9 @@
                     <span class="adj-current-stock-val" id="adjCurrentStock"
                         style="font-size: 1.1rem; font-weight: 900; color: #a16207;">0</span>
                 </div>
-                
-                <div style="margin-top: auto; display: flex; flex-direction: column; align-items: center; gap: 8px; width: 100%;">
+
+                <div
+                    style="margin-top: auto; display: flex; flex-direction: column; align-items: center; gap: 8px; width: 100%;">
                     <hr style="border: 0; border-top: 2px dashed #cbd5e1; width: 30px; margin: 4px 0;">
                     <button class="acc-action-btn" onclick="switchSection('inventory')" title="المخزن"
                         style="width: 50px; height: 50px; border-radius: 14px; background: #1e293b; color: white; border: none; display: flex; align-items: center; justify-content: center; padding: 0; box-shadow: 0 4px 10px rgba(30, 41, 59, 0.3); transition: 0.2s;">
@@ -3820,10 +3895,12 @@
                         <div class="dt-badges-group" style="display: flex; gap: 6px; align-items: center;">
                             <span class="dt-badge dt-badge-id" style="background:#f39c12;">رقم ف: <span
                                     id="adjBadgeID">1</span></span>
-                            <span class="dt-badge" style="background: #27ae60; font-weight: 900; display: flex; align-items: center; gap: 4px;">
+                            <span class="dt-badge"
+                                style="background: #27ae60; font-weight: 900; display: flex; align-items: center; gap: 4px;">
                                 🔢 الكمية: <span id="headerAdjTotalQty">0</span>
                             </span>
-                            <span class="dt-badge" style="background: #e67e22; font-weight: 900; display: flex; align-items: center; gap: 4px;">
+                            <span class="dt-badge"
+                                style="background: #e67e22; font-weight: 900; display: flex; align-items: center; gap: 4px;">
                                 💰 القيمة: <span id="headerAdjGrandTotal">0.00</span>
                             </span>
                         </div>
@@ -4027,8 +4104,11 @@
             <div class="products-panel"
                 style="flex: 1; display: flex; flex-direction: column; margin: 0; background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
 
-                <div class="panel-header" style="padding: 20px; border-bottom: 2px solid #fce7f3; background: linear-gradient(135deg, #fff0f6, #fdf2f8);">
-                    <h2 style="margin:0; font-size:1.4rem; font-weight:900; background: linear-gradient(135deg, #be185d, #ec4899); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">👤 إدارة العملاء والموردين
+                <div class="panel-header"
+                    style="padding: 20px; border-bottom: 2px solid #fce7f3; background: linear-gradient(135deg, #fff0f6, #fdf2f8);">
+                    <h2
+                        style="margin:0; font-size:1.4rem; font-weight:900; background: linear-gradient(135deg, #be185d, #ec4899); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
+                        👤 إدارة العملاء والموردين
                     </h2>
 
                     <div style="display: flex; gap: 15px; margin-top: 20px; flex-wrap: wrap;">
@@ -4113,8 +4193,7 @@
         style="height: calc(100vh - 95px); overflow: hidden; display: flex; flex-direction: row; gap: 0; position: relative;">
 
         <!-- شريط التمرير الأبجدي السريع -->
-        <div id="pt-fast-scrollbar"
-            style="display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 10px 4px;
+        <div id="pt-fast-scrollbar" style="display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 10px 4px;
                    background: rgba(255,255,255,0.92); border-left: 1px solid #e2e8f0;
                    min-width: 34px; overflow-y: auto; scrollbar-width: none;
                    box-shadow: -2px 0 10px rgba(0,0,0,0.05); flex-shrink: 0;
@@ -4123,8 +4202,7 @@
         </div>
 
         <!-- منطقة المحتوى الرئيسية -->
-        <div id="pt-content-area" class="fast-scrollbar"
-            style="flex: 1; height: 100%; overflow-y: scroll;">
+        <div id="pt-content-area" class="fast-scrollbar" style="flex: 1; height: 100%; overflow-y: scroll;">
             <!-- يتم تعبئته بواسطة renderPriceTrackingDashboard -->
         </div>
 
@@ -4773,12 +4851,14 @@
                 <!-- Sidebar (Now on Right in RTL) -->
                 <div id="premium-settings-sidebar">
                     <div class="premium-sidebar-header" style="display: flex; align-items: center; gap: 8px;">
-                        <button class="btn-back-home" onclick="switchSection('dashboard')" title="العودة للقائمة الرئيسية"
+                        <button class="btn-back-home" onclick="switchSection('dashboard')"
+                            title="العودة للقائمة الرئيسية"
                             style="margin: 0; background: #1e293b; color: white; width: 35px; height: 35px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1rem; border: none; cursor: pointer; transition: 0.3s;"
                             onmouseover="this.style.background='#334155'"
                             onmouseout="this.style.background='#1e293b'">↩️</button>
                         <div class="premium-logo-box">⚙️</div>
-                        <h2 class="premium-sidebar-title" data-i18n="app_settings" style="margin: 0; font-size: 1.2rem;">إعدادات النظام</h2>
+                        <h2 class="premium-sidebar-title" data-i18n="app_settings"
+                            style="margin: 0; font-size: 1.2rem;">إعدادات النظام</h2>
                     </div>
 
                     <div class="premium-badge">
@@ -5383,47 +5463,26 @@
                                 </div>
 
                                 <div
-                                    style="margin-top: 25px; padding: 15px; background: #f8f9fa; border-radius: var(--radius-md); border: 1px solid #eee;">
+                                    style="margin-top: 25px; padding: 20px; background: #f8f9fa; border-radius: var(--radius-md); border: 1px solid #eee;">
                                     <label
                                         style="display: flex; align-items: center; gap: 12px; cursor: pointer; font-weight:bold;">
                                         <input type="checkbox" id="autoBackupSetting" style="width:20px; height:20px;">
                                         <span>📦 طلب تحميل نسخة احتياطية تلقائياً عند تسجيل الخروج أو الإغلاق</span>
                                     </label>
-                                </div>
-
-                                <!-- قسم تصفير قاعدة البيانات (المطلوب) -->
-                                <div
-                                    style="margin-top: 40px; padding: 30px; background: #fff1f2; border: 2.5px dashed #e11d48; border-radius: 25px; position: relative; overflow: hidden;">
-                                    <div
-                                        style="display: flex; align-items: flex-start; gap: 20px; position: relative; z-index: 2;">
-                                        <div style="font-size: 3rem;">⚠️</div>
-                                        <div style="flex: 1;">
-                                            <h3
-                                                style="margin: 0 0 10px; color: #9f1239; font-weight: 900; font-size: 1.4rem;">
-                                                تصفير قاعدة البيانات بالكامل</h3>
-                                            <p
-                                                style="margin: 0 0 15px; color: #be123c; font-weight: 900; font-size: 0.95rem; line-height: 1.6;">
-                                                تنبيه أمان: سيؤدي هذا الإجراء إلى حذف نهائي لكافة الأصناف، الفواتير،
-                                                أرصدة العملاء، وحركات المخازن.
-                                                <br>
-                                                <span
-                                                    style="background: #e11d48; color: white; padding: 2px 8px; border-radius: 4px;">هذا
-                                                    الإجراء غير قابل للتراجع نهائياً.</span>
-                                            </p>
-
-                                            <button onclick="confirmFullReset()"
-                                                style="background: #e11d48; color: white; border: none; padding: 15px 35px; border-radius: 12px; font-weight: 900; font-size: 1.1rem; cursor: pointer; transition: 0.3s; box-shadow: 0 10px 25px rgba(225, 29, 72, 0.3); display: flex; align-items: center; gap: 12px;"
-                                                onmouseover="this.style.background='#be123c'; this.style.transform='translateY(-2px)';"
-                                                onmouseout="this.style.background='#e11d48'; this.style.transform='translateY(0)';">
-                                                <span>💣</span> تدمير كافة البيانات والبدء من الصفر
-                                            </button>
-                                        </div>
+                                    
+                                    <div style="margin-top: 15px; display: flex; align-items: center; gap: 15px; border-top: 1px dashed #ddd; padding-top: 15px;">
+                                        <span style="font-weight: bold; color: #475569; font-size: 0.85rem;">🔄 تكرار النسخ الاحتياطي التلقائي في الخلفية:</span>
+                                        <select id="autoBackupInterval" style="padding: 8px 15px; border-radius: 10px; border: 1.5px solid #cbd5e1; font-weight: bold; color: #1e293b; outline: none; background: white; cursor: pointer;">
+                                            <option value="close">عند الإغلاق أو تسجيل الخروج فقط</option>
+                                            <option value="1">كل ساعة</option>
+                                            <option value="2">كل ساعتين</option>
+                                            <option value="12">كل 12 ساعة</option>
+                                            <option value="24">كل 24 ساعة</option>
+                                        </select>
                                     </div>
-                                    <!-- تأثير جمالي خلفي -->
-                                    <div
-                                        style="position: absolute; right: -20px; bottom: -20px; font-size: 8rem; opacity: 0.05; transform: rotate(-15deg); pointer-events: none;">
-                                        🗑️</div>
                                 </div>
+
+
                             </div>
                         </div>
                     </div>
@@ -5785,8 +5844,8 @@
                                         <label
                                             style="display: block; margin-bottom: 10px; color: #64748b; font-size: 0.8rem; font-weight: bold;">المخزن
                                             المعتمد للجهاز الحالي:</label>
-                                        <select id="settingsActiveWarehouseSelect" class="premium-input-field"
-                                            style="width: 100%; height: 45px; border-radius: 10px; border: 1.5px solid #f59e0b; background: #fffcf0; padding: 0 12px; font-weight: 800;"></select>
+                                        <select id="settingsActiveWarehouseSelect"
+                                            style="width: 100%; height: 45px; border-radius: 10px; border: 1.5px solid #f59e0b; background: #fffcf0; padding: 8px 12px; font-weight: 800; font-size: 1rem; color: #1e293b; outline: none; box-sizing: border-box;"></select>
                                     </div>
                                     <button class="action-btn"
                                         style="width: 100%; height: 50px; background: #f59e0b; color: #1a1600; border-radius: 10px; font-weight: 900; border: none; cursor: pointer;"
@@ -6531,9 +6590,11 @@
                                         </div>
                                         <div
                                             style="display: flex; justify-content: space-between; align-items: center; background: #f8fafc; padding: 12px 18px; border-radius: 12px; border: 1px solid #f1f5f9;">
-                                            <span style="font-weight: 800; color: #475569;">تحديث / إعادة تحميل التطبيق</span>
+                                            <span style="font-weight: 800; color: #475569;">تحديث / إعادة تحميل
+                                                التطبيق</span>
                                             <kbd
-                                                style="background: #ffffff; border: 2px solid #cbd5e1; border-radius: 8px; padding: 4px 12px; font-weight: 900; color: #1e293b; box-shadow: 0 3px 0 #cbd5e1;">F5 / Ctrl+R</kbd>
+                                                style="background: #ffffff; border: 2px solid #cbd5e1; border-radius: 8px; padding: 4px 12px; font-weight: 900; color: #1e293b; box-shadow: 0 3px 0 #cbd5e1;">F5
+                                                / Ctrl+R</kbd>
                                         </div>
                                     </div>
                                 </div>
@@ -6681,14 +6742,21 @@
     <!-- واجهة تسجيل الدخول النيون (Neon Animated Login) -->
     <div id="loginModal" class="login-overlay">
         <div style="position: absolute; top: 30px; right: 40px; z-index: 100000;">
-            <img src="media/bayan_logo.png" style="width: 150px; height: auto; border-radius: 12px; border: 2px solid #d4af37; box-shadow: 0 6px 15px rgba(0,0,0,0.4);" alt="Bayan POS Logo">
+            <img src="media/bayan_logo.png"
+                style="width: 150px; height: auto; border-radius: 12px; border: 2px solid #d4af37; box-shadow: 0 6px 15px rgba(0,0,0,0.4);"
+                alt="Bayan POS Logo">
         </div>
         <div class="login-container">
             <div class="login-glass-card">
                 <div class="login-header" style="text-align: center; margin-bottom: 25px;">
-                    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;">
-                        <img src="media/bayan_logo.png" style="width: 160px; height: auto; border-radius: 12px; border: 2px solid #d4af37; box-shadow: 0 8px 20px rgba(0,0,0,0.5), 0 0 15px rgba(212, 175, 55, 0.2);" alt="Bayan POS Logo">
-                        <h1 style="color: #fff; font-size: 1.5rem; letter-spacing: 2px; margin-top: 5px; font-weight: 900; background: linear-gradient(to right, #fde68a, #d4af37); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">تسجيل الدخول</h1>
+                    <div
+                        style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;">
+                        <img src="media/bayan_logo.png"
+                            style="width: 160px; height: auto; border-radius: 12px; border: 2px solid #d4af37; box-shadow: 0 8px 20px rgba(0,0,0,0.5), 0 0 15px rgba(212, 175, 55, 0.2);"
+                            alt="Bayan POS Logo">
+                        <h1
+                            style="color: #fff; font-size: 1.5rem; letter-spacing: 2px; margin-top: 5px; font-weight: 900; background: linear-gradient(to right, #fde68a, #d4af37); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
+                            تسجيل الدخول</h1>
                     </div>
                 </div>
 
@@ -6809,7 +6877,9 @@
         <div class="login-box"
             style="max-width: 450px; background: #1e293b; border: 2px solid #38bdf8; box-shadow: 0 0 50px rgba(56, 189, 248, 0.2);">
             <div style="text-align: center; margin-bottom: 20px;">
-                <img src="media/bayan_logo.png" style="width: 160px; height: auto; border-radius: 12px; border: 2px solid #d4af37; box-shadow: 0 8px 20px rgba(0,0,0,0.5), 0 0 15px rgba(212, 175, 55, 0.2);" alt="Bayan POS Logo">
+                <img src="media/bayan_logo.png"
+                    style="width: 160px; height: auto; border-radius: 12px; border: 2px solid #d4af37; box-shadow: 0 8px 20px rgba(0,0,0,0.5), 0 0 15px rgba(212, 175, 55, 0.2);"
+                    alt="Bayan POS Logo">
             </div>
             <h2 style="color:#38bdf8; margin-bottom:10px; font-weight: 900;">مرحباً بك في بَيَان POS</h2>
             <p style="margin-bottom:25px; font-size:0.95rem; color:#94a3b8; line-height:1.6;">لتفعيل النسخة التجريبية
@@ -7114,8 +7184,10 @@
                 ">
                     <span style="font-size: 1.1rem;">📅</span>
                     <div style="display: flex; flex-direction: column; line-height: 1.2;">
-                        <span style="font-size: 0.65rem; font-weight: 700; color: #94a3b8; letter-spacing: 0.5px;">تاريخ الإنشاء</span>
-                        <span id="accCreatedAt" style="font-size: 0.82rem; font-weight: 900; color: #475569; font-family: monospace;">--/--/--</span>
+                        <span style="font-size: 0.65rem; font-weight: 700; color: #94a3b8; letter-spacing: 0.5px;">تاريخ
+                            الإنشاء</span>
+                        <span id="accCreatedAt"
+                            style="font-size: 0.82rem; font-weight: 900; color: #475569; font-family: monospace;">--/--/--</span>
                     </div>
                 </div>
 
@@ -7138,9 +7210,8 @@
                         cursor: pointer;
                         transition: all 0.2s ease;
                         box-shadow: 0 2px 6px rgba(0,0,0,0.04);
-                    "
-                    onmouseover="this.style.background='#f1f5f9'; this.style.borderColor='#cbd5e1'; this.style.transform='translateY(-1px)'"
-                    onmouseout="this.style.background='white'; this.style.borderColor='#e2e8f0'; this.style.transform='translateY(0)'">
+                    " onmouseover="this.style.background='#f1f5f9'; this.style.borderColor='#cbd5e1'; this.style.transform='translateY(-1px)'"
+                        onmouseout="this.style.background='white'; this.style.borderColor='#e2e8f0'; this.style.transform='translateY(0)'">
                         <span style="font-size: 1rem;">✕</span>
                         <span>إلغاء</span>
                     </button>
@@ -7163,9 +7234,8 @@
                         box-shadow: 0 2px 10px rgba(16,185,129,0.15);
                         position: relative;
                         overflow: hidden;
-                    "
-                    onmouseover="this.style.background='linear-gradient(135deg,#10b981,#059669)'; this.style.color='white'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 18px rgba(16,185,129,0.35)'"
-                    onmouseout="this.style.background='linear-gradient(135deg, rgba(16,185,129,0.08), rgba(5,150,105,0.12))'; this.style.color='#059669'; this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 10px rgba(16,185,129,0.15)'">
+                    " onmouseover="this.style.background='linear-gradient(135deg,#10b981,#059669)'; this.style.color='white'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 18px rgba(16,185,129,0.35)'"
+                        onmouseout="this.style.background='linear-gradient(135deg, rgba(16,185,129,0.08), rgba(5,150,105,0.12))'; this.style.color='#059669'; this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 10px rgba(16,185,129,0.15)'">
                         <span style="font-size: 1rem;">💾</span>
                         <span>حفظ وإضافة آخر</span>
                     </button>
@@ -7187,9 +7257,8 @@
                         transition: all 0.25s ease;
                         box-shadow: 0 4px 15px rgba(99,102,241,0.35);
                         letter-spacing: 0.3px;
-                    "
-                    onmouseover="this.style.background='linear-gradient(135deg,#7c3aed,#6366f1)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 22px rgba(99,102,241,0.45)'"
-                    onmouseout="this.style.background='linear-gradient(135deg,#6366f1,#4f46e5)'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(99,102,241,0.35)'">
+                    " onmouseover="this.style.background='linear-gradient(135deg,#7c3aed,#6366f1)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 22px rgba(99,102,241,0.45)'"
+                        onmouseout="this.style.background='linear-gradient(135deg,#6366f1,#4f46e5)'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(99,102,241,0.35)'">
                         <span style="font-size: 1rem;">✨</span>
                         <span>حفظ وإغلاق</span>
                     </button>
@@ -7543,23 +7612,51 @@
     </div>
 
     <!-- نافذة إضافة/تعديل مخزن (Warehouse Modal) -->
-    <div id="warehouseModal" class="modal-overlay hidden">
-        <div class="login-box" style="width: 500px; text-align: right;">
-            <h2 style="color:var(--text-color); margin-bottom:20px; text-align: center;" id="warehouseModalTitle">🏭
-                إضافة مخزن</h2>
+    <div id="warehouseModal" class="modal-overlay hidden" style="backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); z-index: 10005;">
+        <div class="login-box" style="width: 480px; text-align: right; border-radius: 24px; padding: 30px; border: 1px solid rgba(255,255,255,0.8); background: rgba(255,255,255,0.95); box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15); font-family: 'Cairo', sans-serif;">
+            
+            <!-- الهيدر مع أيقونة فخمة -->
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px; border-bottom: 2px dashed #f1f5f9; padding-bottom: 15px;">
+                <div style="width: 50px; height: 50px; background: #fffbeb; border: 1.5px solid #fde68a; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; box-shadow: var(--shadow-small);">🏭</div>
+                <div>
+                    <h3 id="warehouseModalTitle" style="margin: 0; color: #1e293b; font-weight: 900; font-size: 1.3rem;">إضافة مخزن جديد</h3>
+                    <p style="margin: 3px 0 0; color: #64748b; font-size: 0.8rem; font-weight: bold;">أدخل تفاصيل المستودع أو موقع الفرع الجديد</p>
+                </div>
+            </div>
+
             <input type="hidden" id="editWarehouseId">
-            <div class="form-group">
-                <label class="form-label">اسم المخزن</label>
-                <input type="text" id="warehouseName" class="search-input" placeholder="مثال: المخزن الرئيسي">
+            
+            <div class="form-group" style="margin-bottom: 20px;">
+                <label class="form-label" style="display: block; font-weight: 900; color: #475569; font-size: 0.85rem; margin-bottom: 8px;">اسم المخزن</label>
+                <div style="position: relative;">
+                    <input type="text" id="warehouseName" style="width: 100%; height: 48px; border-radius: 12px; border: 1.5px solid #cbd5e1; padding: 0 15px; font-weight: 800; font-size: 0.95rem; color: #1e293b; outline: none; background: #f8fafc; transition: 0.3s; box-sizing: border-box;" 
+                           placeholder="مثال: المخزن الرئيسي"
+                           onfocus="this.style.borderColor='#f59e0b'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(245,158,11,0.1)';"
+                           onblur="this.style.borderColor='#cbd5e1'; this.style.background='#f8fafc'; this.style.boxShadow='none';">
+                </div>
             </div>
-            <div class="form-group">
-                <label class="form-label">العنوان / الموقع</label>
-                <input type="text" id="warehouseAddress" class="search-input" placeholder="مثال: شارع الجمهورية">
+
+            <div class="form-group" style="margin-bottom: 25px;">
+                <label class="form-label" style="display: block; font-weight: 900; color: #475569; font-size: 0.85rem; margin-bottom: 8px;">العنوان / الموقع الجغرافي</label>
+                <div style="position: relative;">
+                    <input type="text" id="warehouseAddress" style="width: 100%; height: 48px; border-radius: 12px; border: 1.5px solid #cbd5e1; padding: 0 15px; font-weight: 800; font-size: 0.95rem; color: #1e293b; outline: none; background: #f8fafc; transition: 0.3s; box-sizing: border-box;" 
+                           placeholder="مثال: شارع الجمهورية"
+                           onfocus="this.style.borderColor='#f59e0b'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(245,158,11,0.1)';"
+                           onblur="this.style.borderColor='#cbd5e1'; this.style.background='#f8fafc'; this.style.boxShadow='none';">
+                </div>
             </div>
-            <div style="display:flex; gap:10px; margin-top:20px;">
-                <button class="action-btn btn-save" onclick="saveWarehouse()">حفظ البيانات</button>
-                <button class="action-btn btn-cancel-all"
-                    onclick="document.getElementById('warehouseModal').classList.add('hidden')">إلغاء</button>
+
+            <div style="display:flex; gap:12px; margin-top:20px;">
+                <button class="action-btn" style="flex: 2; height: 50px; background: #f59e0b; color: #1a1600; border-radius: 12px; font-weight: 900; font-size: 1rem; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 8px 20px rgba(245,158,11,0.25); transition: 0.3s;"
+                        onmouseover="this.style.background='#d97706'; this.style.transform='translateY(-2px)';"
+                        onmouseout="this.style.background='#f59e0b'; this.style.transform='translateY(0)';"
+                        onclick="saveWarehouse()">
+                    <span>💾</span> حفظ البيانات
+                </button>
+                <button class="action-btn" style="flex: 1; height: 50px; background: #e2e8f0; color: #475569; border-radius: 12px; font-weight: 900; font-size: 1rem; border: none; cursor: pointer; transition: 0.3s;"
+                        onmouseover="this.style.background='#cbd5e1'; this.style.transform='translateY(-2px)';"
+                        onmouseout="this.style.background='#e2e8f0'; this.style.transform='translateY(0)';"
+                        onclick="document.getElementById('warehouseModal').classList.add('hidden')">إلغاء</button>
             </div>
         </div>
     </div>
@@ -7651,18 +7748,32 @@
             <div style="padding: 25px; flex: 1; display: flex; flex-direction: column; gap: 20px; overflow-y: auto;">
 
                 <!-- 📅 منطقة التاريخ والملاحظات -->
-                <div style="display: flex; gap: 20px; background: linear-gradient(135deg, #ffffff, #f0fdf4); padding: 20px; border-radius: 18px; border: 1px solid #dcfce7; border-right: 6px solid #16a34a;">
+                <div
+                    style="display: flex; gap: 20px; background: linear-gradient(135deg, #ffffff, #f0fdf4); padding: 20px; border-radius: 18px; border: 1px solid #dcfce7; border-right: 6px solid #16a34a;">
                     <div style="flex: 1;">
-                        <label style="display: block; margin-bottom: 8px; font-weight: 900; color: #2c3e50; font-size: 0.85rem;">📅 التاريخ</label>
-                        <input type="date" id="transferDate" class="search-input" style="width: 100%; height: 48px; border-radius: 12px; border: 2px solid #cbd5e1; font-weight: 800; font-size: 1rem; text-align: center; color: #1e293b; background: white;" onfocus="this.style.borderColor='#16a34a'" onblur="this.style.borderColor='#cbd5e1'">
+                        <label
+                            style="display: block; margin-bottom: 8px; font-weight: 900; color: #2c3e50; font-size: 0.85rem;">📅
+                            التاريخ</label>
+                        <input type="date" id="transferDate" class="search-input"
+                            style="width: 100%; height: 48px; border-radius: 12px; border: 2px solid #cbd5e1; font-weight: 800; font-size: 1rem; text-align: center; color: #1e293b; background: white;"
+                            onfocus="this.style.borderColor='#16a34a'" onblur="this.style.borderColor='#cbd5e1'">
                     </div>
                     <div style="flex: 1;">
-                        <label style="display: block; margin-bottom: 8px; font-weight: 900; color: #2c3e50; font-size: 0.85rem;">⏰ الوقت</label>
-                        <input type="time" id="transferTime" class="search-input" style="width: 100%; height: 48px; border-radius: 12px; border: 2px solid #cbd5e1; font-weight: 800; font-size: 1rem; text-align: center; color: #1e293b; background: white;" onfocus="this.style.borderColor='#16a34a'" onblur="this.style.borderColor='#cbd5e1'">
+                        <label
+                            style="display: block; margin-bottom: 8px; font-weight: 900; color: #2c3e50; font-size: 0.85rem;">⏰
+                            الوقت</label>
+                        <input type="time" id="transferTime" class="search-input"
+                            style="width: 100%; height: 48px; border-radius: 12px; border: 2px solid #cbd5e1; font-weight: 800; font-size: 1rem; text-align: center; color: #1e293b; background: white;"
+                            onfocus="this.style.borderColor='#16a34a'" onblur="this.style.borderColor='#cbd5e1'">
                     </div>
                     <div style="flex: 2;">
-                        <label style="display: block; margin-bottom: 8px; font-weight: 900; color: #2c3e50; font-size: 0.85rem;">📝 ملاحظات التحويل</label>
-                        <input type="text" id="transferNotes" class="search-input" placeholder="اكتب سبب أو تفاصيل التحويل..." style="width: 100%; height: 48px; border-radius: 12px; border: 2px solid #cbd5e1; font-weight: 800; font-size: 1rem; padding: 0 15px; color: #1e293b; background: white;" onfocus="this.style.borderColor='#16a34a'" onblur="this.style.borderColor='#cbd5e1'">
+                        <label
+                            style="display: block; margin-bottom: 8px; font-weight: 900; color: #2c3e50; font-size: 0.85rem;">📝
+                            ملاحظات التحويل</label>
+                        <input type="text" id="transferNotes" class="search-input"
+                            placeholder="اكتب سبب أو تفاصيل التحويل..."
+                            style="width: 100%; height: 48px; border-radius: 12px; border: 2px solid #cbd5e1; font-weight: 800; font-size: 1rem; padding: 0 15px; color: #1e293b; background: white;"
+                            onfocus="this.style.borderColor='#16a34a'" onblur="this.style.borderColor='#cbd5e1'">
                     </div>
                 </div>
 
@@ -7797,7 +7908,8 @@
                         style="height: 50px; padding: 0 30px; background: #64748b !important; color: white !important; border: none !important; border-radius: 14px; font-weight: 800; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(100, 116, 139, 0.2);"
                         onmouseover="this.style.setProperty('background', '#475569', 'important'); this.style.transform='translateY(-2px)';"
                         onmouseout="this.style.setProperty('background', '#64748b', 'important'); this.style.transform='translateY(0)';"
-                        onmousedown="this.style.setProperty('background', '#334155', 'important'); this.style.transform='translateY(1px)';">إلغاء ❌</button>
+                        onmousedown="this.style.setProperty('background', '#334155', 'important'); this.style.transform='translateY(1px)';">إلغاء
+                        ❌</button>
                     <button class="action-btn" onclick="printTransferNote()"
                         style="height: 50px; padding: 0 25px; background: #0ea5e9 !important; color: white !important; border: none !important; border-radius: 14px; font-weight: 800; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 10px rgba(14, 165, 233, 0.2);"
                         onmouseover="this.style.setProperty('background', '#0284c7', 'important'); this.style.transform='translateY(-2px)';"
@@ -8105,9 +8217,10 @@
                             style="text-align: right; background: #f8fafc; padding: 10px; border-radius: 8px; font-size: 0.85rem; margin-bottom: 10px; border: 1px solid #e2e8f0; width: 100%; box-sizing: border-box;">
                             <ul class="plan-features" style="font-size: 0.8rem; margin: 0; padding-right: 15px;">
                                 <li>✔ جميع الأقسام تعمل</li>
-                                <li>✔ حتى 5 فاتورة</li>
+                                <li>✔ حتى 200 فاتورة</li>
                                 <li>✔ دعم محلي</li>
                                 <li>✔ بدون تفعيل</li>
+                                <li style="color: #22c55e; font-weight: bold;">✨ ميزة الذكاء الاصطناعي 🤖 (قريباً جداً)</li>
                             </ul>
                         </div>
 
@@ -8130,7 +8243,7 @@
                             <li>إدارة مبيعات ومشتريات احترافية</li>
                             <li>عدد فواتير غير محدود ♾️</li>
                             <li>نظام مخازن وحسابات متكامل</li>
-                            <li style="color: #22c55e; font-weight: bold;">✨ ميزة الذكاء الاصطناعي 🤖</li>
+                            <li style="color: #22c55e; font-weight: bold;">✨ ميزة الذكاء الاصطناعي 🤖 (قريباً جداً)</li>
                             <li>دعم فني وتحديثات مستمرة</li>
                         </ul>
                         <div style="display: flex; gap: 8px; width: 100%; margin-top: auto;">
@@ -8150,7 +8263,7 @@
                         <ul class="plan-features" style="font-size: 0.8rem; margin-bottom: 10px;">
                             <li>كافة مميزات الباقة الأساسية</li>
                             <li>عدد فواتير غير محدود ♾️</li>
-                            <li style="color: #22c55e; font-weight: bold;">✨ ميزة الذكاء الاصطناعي 🤖</li>
+                            <li style="color: #22c55e; font-weight: bold;">✨ ميزة الذكاء الاصطناعي 🤖 (قريباً جداً)</li>
                             <li>نسخ احتياطي سحابي تلقائي</li>
                             <li
                                 style="color: #fff; background: rgba(39, 174, 96, 0.5); padding: 2px 5px; border-radius: 4px; font-weight: bold;">
@@ -8174,7 +8287,7 @@
                         <ul class="plan-features" style="font-size: 0.8rem; margin-bottom: 10px;">
                             <li>امتلاك البرنامج للأبد (بدون اشتراك)</li>
                             <li>عدد فواتير غير محدود ♾️</li>
-                            <li style="color: #22c55e; font-weight: bold;">✨ ميزة الذكاء الاصطناعي 🤖</li>
+                            <li style="color: #22c55e; font-weight: bold;">✨ ميزة الذكاء الاصطناعي 🤖 (قريباً جداً)</li>
                             <li>دعم فني شامل مدى الحياة</li>
                             <li style="color: var(--gold); font-weight: bold;">⚡ "اشتري دماغك": مرة واحدة وللأبد!</li>
                         </ul>
@@ -8856,8 +8969,7 @@
                 style="background: linear-gradient(135deg, #1f1b0f 0%, #4a3e20 50%, #1f1b0f 100%);">
                 <div class="wp-label">ذهب سائل</div>
             </div>
-            <div class="wp-item-card"
-                onclick="changeWallpaper('radial-gradient(circle, #2d2415 0%, #0d0c0a 100%)')"
+            <div class="wp-item-card" onclick="changeWallpaper('radial-gradient(circle, #2d2415 0%, #0d0c0a 100%)')"
                 style="background: radial-gradient(circle, #2d2415 0%, #0d0c0a 100%);">
                 <div class="wp-label">بقع ذهب مجردة</div>
             </div>
@@ -8891,8 +9003,7 @@
         <!-- 🌌 الفضاء والظلام -->
         <div class="wp-section-title">🌑 الوضع الليلي والعميق (Dark Obsidian)</div>
         <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 15px;">
-            <div class="wp-item-card" 
-                onclick="changeWallpaper('linear-gradient(135deg, #121212 0%, #242424 100%)')"
+            <div class="wp-item-card" onclick="changeWallpaper('linear-gradient(135deg, #121212 0%, #242424 100%)')"
                 style="background: linear-gradient(135deg, #121212 0%, #242424 100%);">
                 <div class="wp-label">أسود أسمنتي</div>
             </div>
@@ -8901,8 +9012,7 @@
                 style="background: linear-gradient(135deg, #000814 0%, #001d3d 50%, #000814 100%);">
                 <div class="wp-label">شبكة تقنية</div>
             </div>
-            <div class="wp-item-card"
-                onclick="changeWallpaper('radial-gradient(circle, #16161a 0%, #0b0b0d 100%)')"
+            <div class="wp-item-card" onclick="changeWallpaper('radial-gradient(circle, #16161a 0%, #0b0b0d 100%)')"
                 style="background: radial-gradient(circle, #16161a 0%, #0b0b0d 100%);">
                 <div class="wp-label">ظلام دامس</div>
             </div>
@@ -9296,14 +9406,12 @@
         <div class="wp-swatch"
             onclick="changeWallpaper('linear-gradient(135deg, #04121f 0%, #0c2d48 50%, #020b14 100%)')"
             style="background: linear-gradient(135deg, #04121f, #0c2d48);" title="أزرق هادئ"></div>
-        <div class="wp-swatch"
-            onclick="changeWallpaper('linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)')"
+        <div class="wp-swatch" onclick="changeWallpaper('linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)')"
             style="background: linear-gradient(135deg, #f8fafc, #e2e8f0); border: 1px solid #cbd5e1;"
             title="رخام أبيض فاخر"></div>
         <div class="wp-swatch"
             onclick="changeWallpaper('linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 40%, #2c2415 70%, #0d0d0d 100%)')"
-            style="background: linear-gradient(135deg, #0d0d0d, #2c2415);"
-            title="كربون غامق"></div>
+            style="background: linear-gradient(135deg, #0d0d0d, #2c2415);" title="كربون غامق"></div>
     </div>
 
     <!-- الآلة الحاسبة الملكية (Royal Calculator Modal) -->
