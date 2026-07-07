@@ -3,9 +3,9 @@
 //  النسخة المطورة للعمل أوفلاين 100%
 // ============================================================
 
-const CACHE_NAME = 'bayan-pos-v1.0';
-const STATIC_CACHE = 'bayan-static-v1.0';
-const DYNAMIC_CACHE = 'bayan-dynamic-v1.0';
+const CACHE_NAME = 'bayan-pos-v1.1';
+const STATIC_CACHE = 'bayan-static-v1.1';
+const DYNAMIC_CACHE = 'bayan-dynamic-v1.1';
 
 // كافة ملفات النظام الأساسية المتوفرة محلياً (بدون أي ملفات مفقودة تسبب فشل التثبيت)
 const STATIC_FILES = [
